@@ -2,6 +2,7 @@ import Constants from "expo-constants";
 import { StyleSheet, View } from "react-native";
 import RepositoryList from "./RepositoryList";
 import Text from "./Text";
+import FlexExample from "./FlexExample";
 
 const styles = StyleSheet.create({
   container: {
@@ -13,9 +14,12 @@ const styles = StyleSheet.create({
 
 const Main = () => {
   return (
-    <View style={styles.container}>
-      <Text color="primary">Rate Repository Application</Text>
-      <RepositoryList />
+    <View>
+      <View style={styles.container}>
+        <Text color="primary">Rate Repository Application</Text>
+        <RepositoryList />
+      </View>
+      <FlexExample />
     </View>
   );
 };
